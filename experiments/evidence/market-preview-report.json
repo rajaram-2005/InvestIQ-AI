@@ -1,0 +1,32 @@
+{
+  "announcement_count": 0,
+  "bytes": 245,
+  "claim_count": 0,
+  "content_sha256": "b690f1af909db7f3c0275aeb3cb7723adad3b9cac629c135c74fe28bd3858225",
+  "document": {
+    "available_at": "2024-01-02T21:05:00Z",
+    "document_type": "market_prices",
+    "id": "414efbb6-7784-4ba7-8ce0-5fd676669eb0",
+    "media_type": "text/csv",
+    "original_source_uri": "synthetic://fixture/market.csv",
+    "published_at": "2024-01-02T21:00:00Z",
+    "version_identifier": "fixture-file-v1"
+  },
+  "kind": "offline_preview_not_ingested",
+  "observation_count": 5,
+  "quarantined_count": 0,
+  "retrieved_at": null,
+  "source": {
+    "allow_derived_storage": true,
+    "allow_raw_storage": true,
+    "allow_redistribution": false,
+    "id": "f43e1206-7a38-4a7c-a391-f02f0d5ecb6b",
+    "license": "synthetic test fixture",
+    "license_reference": "repository LICENSE",
+    "provider": "Synthetic fixture (not a market feed)",
+    "source_uri": "synthetic://fixture/provider",
+    "version_identifier": "fixture-source-v1"
+  },
+  "valid_count": 5,
+  "warning": "Preview is not a database ingestion or a point-in-time snapshot."
+}

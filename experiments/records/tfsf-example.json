@@ -1,0 +1,7093 @@
+{
+  "ablation": "none",
+  "algorithm": "tfsf",
+  "config": {
+    "change_z": 3.0,
+    "detect_changes": true,
+    "prior_mean": 0.0,
+    "prior_variance": 1000000.0,
+    "process_variance": 25.0,
+    "use_observation_uncertainty": true
+  },
+  "environment": {
+    "implementation": "CPython",
+    "packages": {
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "pytest": "8.3.5",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.13.1"
+    },
+    "python": "3.11.2"
+  },
+  "git_commit": "aa59395b5bb7dbd8d4c5dada48405c92344910ce",
+  "purpose": "exploratory synthetic benchmark; not a hypothesis test",
+  "record_version": 1,
+  "result": {
+    "baseline_mae": 106.01815788736535,
+    "baseline_mae_by_dimension": {
+      "assets": 39.975793376843015,
+      "expenses": 61.33199784163287,
+      "goal": 51.41573930952836,
+      "income": 61.126946584434826,
+      "liabilities": 316.24031232438773
+    },
+    "baseline_snapshots": [
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "mean": [
+          2984.337736141107,
+          2002.1750951504475,
+          49984.57460396245,
+          0.0,
+          100007.81383008287
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-01T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          1000000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "mean": [
+          3013.5935442953505,
+          2002.1750951504475,
+          50022.92705411143,
+          0.0,
+          100007.81383008287
+        ],
+        "observed": [
+          "income",
+          "assets"
+        ],
+        "timestamp": "2020-01-02T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          1000000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3002.0557999453445,
+          1995.4573732400584,
+          50008.850966695325,
+          9722.637330243315,
+          99929.25420423095
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-03T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          40000.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.52626878647,
+          1960.9668695582836,
+          49768.192048121724,
+          10003.154155050588,
+          100088.2914407347
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-04T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3007.995107485054,
+          2003.2407249748367,
+          49768.192048121724,
+          10003.154155050588,
+          100088.2914407347
+        ],
+        "observed": [
+          "income",
+          "expenses"
+        ],
+        "timestamp": "2020-01-05T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3007.995107485054,
+          1968.8160901369486,
+          49985.5339751182,
+          10030.705389805362,
+          99950.20527306783
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-06T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3072.118386589539,
+          2018.2712670712128,
+          49751.59127599315,
+          9993.873907129277,
+          99966.58081024214
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-07T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          40000.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2990.4879805402647,
+          1969.879842527844,
+          49751.59127599315,
+          10002.74200657045,
+          99999.0779022135
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-08T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2983.1526349965975,
+          2149.0264450711156,
+          49806.75593721026,
+          10015.815869832742,
+          99999.0779022135
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-09T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          40000.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2983.1526349965975,
+          1972.3268702188814,
+          50009.26333439818,
+          10002.485599867343,
+          100008.27223889972
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-10T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2983.1526349965975,
+          1972.3268702188814,
+          49987.048255176735,
+          10030.31474798554,
+          100008.27223889972
+        ],
+        "observed": [
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-11T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3203.425785193154,
+          1972.3268702188814,
+          49980.80821243568,
+          10028.66948089847,
+          99978.86918272726
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-12T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3203.425785193154,
+          1961.9417928040632,
+          49958.1754588506,
+          9573.346579594152,
+          99944.00417184211
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-13T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          40000.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2796.711019328934,
+          1924.8207032336832,
+          49982.420835282355,
+          10089.286287663945,
+          99960.22559256971
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-14T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          40000.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2796.711019328934,
+          2023.2834706455508,
+          50007.54658121986,
+          10315.672115815625,
+          100046.07887395374
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-15T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          40000.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2796.711019328934,
+          1964.4909862623872,
+          50001.06876926655,
+          9488.983193260054,
+          99966.57327516921
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-16T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3014.028834029944,
+          1971.701439547365,
+          50004.658047423436,
+          10002.311135708687,
+          99989.51002141392
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-17T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2978.6321446353913,
+          2265.4981217034137,
+          50004.658047423436,
+          10125.985954386433,
+          99989.51002141392
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-18T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2973.6810208360007,
+          2265.4981217034137,
+          49978.27427470383,
+          9960.76450347091,
+          99993.22201933649
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-19T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3283.635981935121,
+          1813.6991223825719,
+          49947.15642959455,
+          10000.511333746443,
+          99985.93309996507
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-20T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2828.574744676045,
+          1977.8543032176096,
+          49947.15642959455,
+          10011.158067100525,
+          99977.34146224856
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-21T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2828.574744676045,
+          2121.61674899759,
+          49889.408933335224,
+          10102.548881222501,
+          99977.34146224856
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-22T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          40000.0,
+          40000.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3006.080697093479,
+          1958.765876246148,
+          49889.408933335224,
+          9820.870483455315,
+          99848.75047544045
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-23T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          40000.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2958.5206312055147,
+          1958.765876246148,
+          50056.09276768887,
+          9820.870483455315,
+          99972.4495082173
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-24T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.774409900006,
+          1937.3790624230949,
+          50043.73206235118,
+          9820.870483455315,
+          99968.33284899271
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-25T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.774409900006,
+          1943.3402693710145,
+          49990.447181015676,
+          9957.450440860572,
+          99963.38996663409
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-26T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2982.082541769831,
+          2042.0339536235604,
+          49914.60161178473,
+          9999.457748783589,
+          99599.88585402047
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-27T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          40000.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2988.119029060666,
+          2042.0339536235604,
+          49967.13890570646,
+          10003.382239857157,
+          99977.53590029807
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-28T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2801.2466905058996,
+          1928.8736322144805,
+          49967.13890570646,
+          10004.757481174338,
+          99652.64043373898
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-29T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3000.359222957269,
+          2046.4577483372116,
+          49985.01741910478,
+          10024.440966691594,
+          99960.11753587851
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-30T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2701.4975962294648,
+          1917.787370688291,
+          49979.168461977206,
+          10024.440966691594,
+          99939.42153700365
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-31T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3314.2954947765857,
+          1899.6618232080853,
+          49985.58939868192,
+          10020.182868640528,
+          99923.11766309831
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-01T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2996.427607840997,
+          1901.3051153930912,
+          49982.71125640327,
+          10020.182868640528,
+          99928.88645595302
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-02-02T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2967.086808729899,
+          1435.4022157191441,
+          50003.81130082044,
+          10020.182868640528,
+          100009.55592632153
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-02-03T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2967.086808729899,
+          1435.4022157191441,
+          49935.42670892908,
+          10022.836024591703,
+          99949.81046907502
+        ],
+        "observed": [
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-04T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2967.086808729899,
+          1873.290183712606,
+          49946.066412308406,
+          9994.080517217844,
+          99950.1016699749
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-05T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2971.8611284358326,
+          1873.290183712606,
+          49971.03327841232,
+          9971.28774296891,
+          99969.78792726659
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-06T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2971.8611284358326,
+          1888.4169713447873,
+          49971.03327841232,
+          9971.28774296891,
+          99941.35217710023
+        ],
+        "observed": [
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-02-07T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2974.579721484322,
+          1888.4169713447873,
+          49971.03327841232,
+          9983.309358564404,
+          99941.35217710023
+        ],
+        "observed": [
+          "income",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-08T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3156.2188992210004,
+          2054.1514188316705,
+          49971.03327841232,
+          9948.221065205556,
+          99509.48758802972
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-09T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          40000.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3628.395122063381,
+          1880.2713799529035,
+          49971.03327841232,
+          9988.41971454661,
+          99972.22900139287
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-10T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3628.395122063381,
+          1905.1777778563414,
+          49971.03327841232,
+          9988.41971454661,
+          99966.67695015774
+        ],
+        "observed": [
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-02-11T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3628.395122063381,
+          1881.9153599883364,
+          49974.18159791292,
+          9988.41971454661,
+          100040.61795104734
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-02-12T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3597.8306060003533,
+          1902.2665826715354,
+          49957.377786389916,
+          9978.859953651894,
+          99957.41504844691
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-13T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3566.8234806004916,
+          1902.2665826715354,
+          49957.377786389916,
+          9999.306575875957,
+          99915.40353472733
+        ],
+        "observed": [
+          "income",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-14T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3599.6348105105267,
+          1902.2665826715354,
+          50024.86387541372,
+          9990.149458235333,
+          99915.40353472733
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-15T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3590.4686184742013,
+          1906.6475688197922,
+          50024.86387541372,
+          9990.149458235333,
+          99986.25940775606
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-02-16T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3601.031114773024,
+          1896.260875349024,
+          49933.11383660827,
+          9948.575582314488,
+          99986.25940775606
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-17T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3591.3165400183016,
+          1926.7587739351325,
+          49933.11383660827,
+          9954.984710453075,
+          99986.25940775606
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-18T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3697.346767872792,
+          1948.8652472758477,
+          49933.11383660827,
+          9919.190434445816,
+          99949.76991451548
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-19T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3564.1117699823194,
+          1920.435267491458,
+          49980.6466053294,
+          9919.190434445816,
+          99949.76991451548
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets"
+        ],
+        "timestamp": "2020-02-20T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3577.2168625205377,
+          1950.6616707760284,
+          49980.6466053294,
+          9948.748844709064,
+          100016.39885742843
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-21T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3603.78558808603,
+          1950.6616707760284,
+          49774.41471208819,
+          9938.252830269059,
+          100016.39885742843
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-22T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3587.3168969947546,
+          1950.6616707760284,
+          49984.68405954748,
+          9990.889136681886,
+          100016.39885742843
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-23T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3598.4477211842973,
+          1944.928350157254,
+          50042.49279714261,
+          9716.104629901236,
+          100001.52579048972
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-24T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3610.6528120830244,
+          1944.928350157254,
+          49961.40639845851,
+          9978.872666975933,
+          99996.6932491137
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-25T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3593.7014504266667,
+          1929.8779940475868,
+          49944.8123601177,
+          9964.072678265917,
+          99724.58249222639
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-26T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3389.041848584489,
+          1928.674817961568,
+          50005.053033329554,
+          9932.964619051747,
+          99940.91653109374
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-27T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          40000.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3318.2393422674227,
+          1887.5553762364143,
+          49981.25144055804,
+          9938.33746328061,
+          99940.91653109374
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-28T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3572.934076237971,
+          1932.4848715576636,
+          49981.25144055804,
+          9673.610490572146,
+          99962.25533727936
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-29T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3596.6820678244553,
+          1932.4848715576636,
+          49942.763046302374,
+          9673.610490572146,
+          99962.25533727936
+        ],
+        "observed": [
+          "income",
+          "assets"
+        ],
+        "timestamp": "2020-03-01T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3634.423779482264,
+          1885.1360009102568,
+          49939.075050705105,
+          9673.610490572146,
+          99951.0354107663
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-03-02T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3571.766835427763,
+          1911.2373290416137,
+          49974.20618863264,
+          9673.610490572146,
+          99961.9018824583
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-03-03T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3571.766835427763,
+          1911.2373290416137,
+          49984.49138514708,
+          9960.910762398951,
+          99949.59297590923
+        ],
+        "observed": [
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-04T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3572.297321626317,
+          1907.5212267013947,
+          49984.49138514708,
+          10249.491887187789,
+          99947.95519708021
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-05T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3562.6844280393516,
+          1561.4971822749635,
+          49984.49138514708,
+          9907.000470748932,
+          99726.79620513532
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-06T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3562.6844280393516,
+          1466.4346303334567,
+          49990.615545961846,
+          9960.591256568256,
+          99953.93027751434
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-07T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3627.3381718226324,
+          1910.3132028272792,
+          49998.01580354713,
+          9947.302629352922,
+          99963.59600368177
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-08T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3629.8616882239003,
+          1918.5598375070133,
+          50008.13567527509,
+          9946.927283614403,
+          99985.83344316979
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-09T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3589.0949667514815,
+          1926.2676258122883,
+          49959.909161874115,
+          9946.927283614403,
+          99992.28328122459
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-03-10T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3595.152992252119,
+          1902.6809706444778,
+          49959.909161874115,
+          9968.613234629574,
+          99968.80143778925
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-11T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3601.6470447130746,
+          2077.5140689055665,
+          49959.909161874115,
+          9913.947343560183,
+          99769.23073591669
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-12T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3462.04887233966,
+          1948.7773715262467,
+          50008.24411927464,
+          9955.74696399126,
+          100098.98127695566
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-13T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3628.6191586159052,
+          1957.1346007036782,
+          50211.90990149454,
+          9932.840385712732,
+          100098.98127695566
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-03-14T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          40000.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3631.167298082457,
+          1912.5148197466074,
+          50018.69345888266,
+          9944.69752476382,
+          99973.03007402542
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-15T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3664.7604808259416,
+          2061.8830161184683,
+          50012.5175646568,
+          10056.297865944882,
+          99987.4029274275
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-16T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          40000.0,
+          40000.0,
+          40000.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3641.2163112598446,
+          2107.923885034666,
+          50033.67437974069,
+          9975.40741911355,
+          99986.100545673
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-17T00:00:00+00:00",
+        "variance": [
+          400.0,
+          40000.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          4085.238782552829,
+          1949.681570614292,
+          49951.09074867203,
+          9949.817780343372,
+          99925.99286205613
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-18T00:00:00+00:00",
+        "variance": [
+          40000.0,
+          400.0,
+          40000.0,
+          400.0,
+          40000.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3596.904448717201,
+          1891.621480605463,
+          49981.8849241607,
+          9933.665648035538,
+          99992.72052209008
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-19T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3596.904448717201,
+          1936.3207405747894,
+          49981.8849241607,
+          9933.665648035538,
+          99715.11621654086
+        ],
+        "observed": [
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-03-20T00:00:00+00:00",
+        "variance": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          40000.0
+        ]
+      }
+    ],
+    "break_at": 40,
+    "coverage_90": 0.83,
+    "income_break_detected_at_break": true,
+    "mae": 67.6840831385813,
+    "mae_by_dimension": {
+      "assets": 10.602407277248767,
+      "expenses": 10.178237844568253,
+      "goal": 9.696254972711177,
+      "income": 39.21489826371254,
+      "liabilities": 268.7286173346657
+    },
+    "observations": [
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-01T00:00:00+00:00",
+        "values": {
+          "assets": 49984.57460396245,
+          "expenses": 2002.1750951504475,
+          "goal": 100007.81383008287,
+          "income": 2984.337736141107,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-02T00:00:00+00:00",
+        "values": {
+          "assets": 50022.92705411143,
+          "expenses": null,
+          "goal": null,
+          "income": 3013.5935442953505,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-03T00:00:00+00:00",
+        "values": {
+          "assets": 50008.850966695325,
+          "expenses": 1995.4573732400584,
+          "goal": 99929.25420423095,
+          "income": 3002.0557999453445,
+          "liabilities": 9722.637330243315
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-04T00:00:00+00:00",
+        "values": {
+          "assets": 49768.192048121724,
+          "expenses": 1960.9668695582836,
+          "goal": 100088.2914407347,
+          "income": 2994.52626878647,
+          "liabilities": 10003.154155050588
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-05T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 2003.2407249748367,
+          "goal": null,
+          "income": 3007.995107485054,
+          "liabilities": null
+        },
+        "variances": {
+          "expenses": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-06T00:00:00+00:00",
+        "values": {
+          "assets": 49985.5339751182,
+          "expenses": 1968.8160901369486,
+          "goal": 99950.20527306783,
+          "income": null,
+          "liabilities": 10030.705389805362
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-07T00:00:00+00:00",
+        "values": {
+          "assets": 49751.59127599315,
+          "expenses": 2018.2712670712128,
+          "goal": 99966.58081024214,
+          "income": 3072.118386589539,
+          "liabilities": 9993.873907129277
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-08T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1969.879842527844,
+          "goal": 99999.0779022135,
+          "income": 2990.4879805402647,
+          "liabilities": 10002.74200657045
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-09T00:00:00+00:00",
+        "values": {
+          "assets": 49806.75593721026,
+          "expenses": 2149.0264450711156,
+          "goal": null,
+          "income": 2983.1526349965975,
+          "liabilities": 10015.815869832742
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-10T00:00:00+00:00",
+        "values": {
+          "assets": 50009.26333439818,
+          "expenses": 1972.3268702188814,
+          "goal": 100008.27223889972,
+          "income": null,
+          "liabilities": 10002.485599867343
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-11T00:00:00+00:00",
+        "values": {
+          "assets": 49987.048255176735,
+          "expenses": null,
+          "goal": null,
+          "income": null,
+          "liabilities": 10030.31474798554
+        },
+        "variances": {
+          "assets": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-12T00:00:00+00:00",
+        "values": {
+          "assets": 49980.80821243568,
+          "expenses": null,
+          "goal": 99978.86918272726,
+          "income": 3203.425785193154,
+          "liabilities": 10028.66948089847
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-13T00:00:00+00:00",
+        "values": {
+          "assets": 49958.1754588506,
+          "expenses": 1961.9417928040632,
+          "goal": 99944.00417184211,
+          "income": null,
+          "liabilities": 9573.346579594152
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-14T00:00:00+00:00",
+        "values": {
+          "assets": 49982.420835282355,
+          "expenses": 1924.8207032336832,
+          "goal": 99960.22559256971,
+          "income": 2796.711019328934,
+          "liabilities": 10089.286287663945
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-15T00:00:00+00:00",
+        "values": {
+          "assets": 50007.54658121986,
+          "expenses": 2023.2834706455508,
+          "goal": 100046.07887395374,
+          "income": null,
+          "liabilities": 10315.672115815625
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-16T00:00:00+00:00",
+        "values": {
+          "assets": 50001.06876926655,
+          "expenses": 1964.4909862623872,
+          "goal": 99966.57327516921,
+          "income": null,
+          "liabilities": 9488.983193260054
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-17T00:00:00+00:00",
+        "values": {
+          "assets": 50004.658047423436,
+          "expenses": 1971.701439547365,
+          "goal": 99989.51002141392,
+          "income": 3014.028834029944,
+          "liabilities": 10002.311135708687
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-18T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 2265.4981217034137,
+          "goal": null,
+          "income": 2978.6321446353913,
+          "liabilities": 10125.985954386433
+        },
+        "variances": {
+          "expenses": 40000.0,
+          "income": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-19T00:00:00+00:00",
+        "values": {
+          "assets": 49978.27427470383,
+          "expenses": null,
+          "goal": 99993.22201933649,
+          "income": 2973.6810208360007,
+          "liabilities": 9960.76450347091
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-20T00:00:00+00:00",
+        "values": {
+          "assets": 49947.15642959455,
+          "expenses": 1813.6991223825719,
+          "goal": 99985.93309996507,
+          "income": 3283.635981935121,
+          "liabilities": 10000.511333746443
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-21T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1977.8543032176096,
+          "goal": 99977.34146224856,
+          "income": 2828.574744676045,
+          "liabilities": 10011.158067100525
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-22T00:00:00+00:00",
+        "values": {
+          "assets": 49889.408933335224,
+          "expenses": 2121.61674899759,
+          "goal": null,
+          "income": null,
+          "liabilities": 10102.548881222501
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 40000.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-23T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1958.765876246148,
+          "goal": 99848.75047544045,
+          "income": 3006.080697093479,
+          "liabilities": 9820.870483455315
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-24T00:00:00+00:00",
+        "values": {
+          "assets": 50056.09276768887,
+          "expenses": null,
+          "goal": 99972.4495082173,
+          "income": 2958.5206312055147,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 40000.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-25T00:00:00+00:00",
+        "values": {
+          "assets": 50043.73206235118,
+          "expenses": 1937.3790624230949,
+          "goal": 99968.33284899271,
+          "income": 2994.774409900006,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-26T00:00:00+00:00",
+        "values": {
+          "assets": 49990.447181015676,
+          "expenses": 1943.3402693710145,
+          "goal": 99963.38996663409,
+          "income": null,
+          "liabilities": 9957.450440860572
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-27T00:00:00+00:00",
+        "values": {
+          "assets": 49914.60161178473,
+          "expenses": 2042.0339536235604,
+          "goal": 99599.88585402047,
+          "income": 2982.082541769831,
+          "liabilities": 9999.457748783589
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 40000.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-28T00:00:00+00:00",
+        "values": {
+          "assets": 49967.13890570646,
+          "expenses": null,
+          "goal": 99977.53590029807,
+          "income": 2988.119029060666,
+          "liabilities": 10003.382239857157
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-29T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1928.8736322144805,
+          "goal": 99652.64043373898,
+          "income": 2801.2466905058996,
+          "liabilities": 10004.757481174338
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-30T00:00:00+00:00",
+        "values": {
+          "assets": 49985.01741910478,
+          "expenses": 2046.4577483372116,
+          "goal": 99960.11753587851,
+          "income": 3000.359222957269,
+          "liabilities": 10024.440966691594
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-01-31T00:00:00+00:00",
+        "values": {
+          "assets": 49979.168461977206,
+          "expenses": 1917.787370688291,
+          "goal": 99939.42153700365,
+          "income": 2701.4975962294648,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-01T00:00:00+00:00",
+        "values": {
+          "assets": 49985.58939868192,
+          "expenses": 1899.6618232080853,
+          "goal": 99923.11766309831,
+          "income": 3314.2954947765857,
+          "liabilities": 10020.182868640528
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-02T00:00:00+00:00",
+        "values": {
+          "assets": 49982.71125640327,
+          "expenses": 1901.3051153930912,
+          "goal": 99928.88645595302,
+          "income": 2996.427607840997,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-03T00:00:00+00:00",
+        "values": {
+          "assets": 50003.81130082044,
+          "expenses": 1435.4022157191441,
+          "goal": 100009.55592632153,
+          "income": 2967.086808729899,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-04T00:00:00+00:00",
+        "values": {
+          "assets": 49935.42670892908,
+          "expenses": null,
+          "goal": 99949.81046907502,
+          "income": null,
+          "liabilities": 10022.836024591703
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-05T00:00:00+00:00",
+        "values": {
+          "assets": 49946.066412308406,
+          "expenses": 1873.290183712606,
+          "goal": 99950.1016699749,
+          "income": null,
+          "liabilities": 9994.080517217844
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-06T00:00:00+00:00",
+        "values": {
+          "assets": 49971.03327841232,
+          "expenses": null,
+          "goal": 99969.78792726659,
+          "income": 2971.8611284358326,
+          "liabilities": 9971.28774296891
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-07T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1888.4169713447873,
+          "goal": 99941.35217710023,
+          "income": null,
+          "liabilities": null
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-08T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": null,
+          "goal": null,
+          "income": 2974.579721484322,
+          "liabilities": 9983.309358564404
+        },
+        "variances": {
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-09T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 2054.1514188316705,
+          "goal": 99509.48758802972,
+          "income": 3156.2188992210004,
+          "liabilities": 9948.221065205556
+        },
+        "variances": {
+          "expenses": 40000.0,
+          "goal": 40000.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-10T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1880.2713799529035,
+          "goal": 99972.22900139287,
+          "income": 3628.395122063381,
+          "liabilities": 9988.41971454661
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-11T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1905.1777778563414,
+          "goal": 99966.67695015774,
+          "income": null,
+          "liabilities": null
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-12T00:00:00+00:00",
+        "values": {
+          "assets": 49974.18159791292,
+          "expenses": 1881.9153599883364,
+          "goal": 100040.61795104734,
+          "income": null,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-13T00:00:00+00:00",
+        "values": {
+          "assets": 49957.377786389916,
+          "expenses": 1902.2665826715354,
+          "goal": 99957.41504844691,
+          "income": 3597.8306060003533,
+          "liabilities": 9978.859953651894
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-14T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": null,
+          "goal": 99915.40353472733,
+          "income": 3566.8234806004916,
+          "liabilities": 9999.306575875957
+        },
+        "variances": {
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-15T00:00:00+00:00",
+        "values": {
+          "assets": 50024.86387541372,
+          "expenses": null,
+          "goal": null,
+          "income": 3599.6348105105267,
+          "liabilities": 9990.149458235333
+        },
+        "variances": {
+          "assets": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-16T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1906.6475688197922,
+          "goal": 99986.25940775606,
+          "income": 3590.4686184742013,
+          "liabilities": null
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-17T00:00:00+00:00",
+        "values": {
+          "assets": 49933.11383660827,
+          "expenses": 1896.260875349024,
+          "goal": null,
+          "income": 3601.031114773024,
+          "liabilities": 9948.575582314488
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-18T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1926.7587739351325,
+          "goal": null,
+          "income": 3591.3165400183016,
+          "liabilities": 9954.984710453075
+        },
+        "variances": {
+          "expenses": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-19T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1948.8652472758477,
+          "goal": 99949.76991451548,
+          "income": 3697.346767872792,
+          "liabilities": 9919.190434445816
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-20T00:00:00+00:00",
+        "values": {
+          "assets": 49980.6466053294,
+          "expenses": 1920.435267491458,
+          "goal": null,
+          "income": 3564.1117699823194,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-21T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1950.6616707760284,
+          "goal": 100016.39885742843,
+          "income": 3577.2168625205377,
+          "liabilities": 9948.748844709064
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-22T00:00:00+00:00",
+        "values": {
+          "assets": 49774.41471208819,
+          "expenses": null,
+          "goal": null,
+          "income": 3603.78558808603,
+          "liabilities": 9938.252830269059
+        },
+        "variances": {
+          "assets": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-23T00:00:00+00:00",
+        "values": {
+          "assets": 49984.68405954748,
+          "expenses": null,
+          "goal": null,
+          "income": 3587.3168969947546,
+          "liabilities": 9990.889136681886
+        },
+        "variances": {
+          "assets": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-24T00:00:00+00:00",
+        "values": {
+          "assets": 50042.49279714261,
+          "expenses": 1944.928350157254,
+          "goal": 100001.52579048972,
+          "income": 3598.4477211842973,
+          "liabilities": 9716.104629901236
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-25T00:00:00+00:00",
+        "values": {
+          "assets": 49961.40639845851,
+          "expenses": null,
+          "goal": 99996.6932491137,
+          "income": 3610.6528120830244,
+          "liabilities": 9978.872666975933
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-26T00:00:00+00:00",
+        "values": {
+          "assets": 49944.8123601177,
+          "expenses": 1929.8779940475868,
+          "goal": 99724.58249222639,
+          "income": 3593.7014504266667,
+          "liabilities": 9964.072678265917
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-27T00:00:00+00:00",
+        "values": {
+          "assets": 50005.053033329554,
+          "expenses": 1928.674817961568,
+          "goal": 99940.91653109374,
+          "income": 3389.041848584489,
+          "liabilities": 9932.964619051747
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 40000.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-28T00:00:00+00:00",
+        "values": {
+          "assets": 49981.25144055804,
+          "expenses": 1887.5553762364143,
+          "goal": null,
+          "income": 3318.2393422674227,
+          "liabilities": 9938.33746328061
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-02-29T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1932.4848715576636,
+          "goal": 99962.25533727936,
+          "income": 3572.934076237971,
+          "liabilities": 9673.610490572146
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-01T00:00:00+00:00",
+        "values": {
+          "assets": 49942.763046302374,
+          "expenses": null,
+          "goal": null,
+          "income": 3596.6820678244553,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 40000.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-02T00:00:00+00:00",
+        "values": {
+          "assets": 49939.075050705105,
+          "expenses": 1885.1360009102568,
+          "goal": 99951.0354107663,
+          "income": 3634.423779482264,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-03T00:00:00+00:00",
+        "values": {
+          "assets": 49974.20618863264,
+          "expenses": 1911.2373290416137,
+          "goal": 99961.9018824583,
+          "income": 3571.766835427763,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-04T00:00:00+00:00",
+        "values": {
+          "assets": 49984.49138514708,
+          "expenses": null,
+          "goal": 99949.59297590923,
+          "income": null,
+          "liabilities": 9960.910762398951
+        },
+        "variances": {
+          "assets": 400.0,
+          "goal": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-05T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1907.5212267013947,
+          "goal": 99947.95519708021,
+          "income": 3572.297321626317,
+          "liabilities": 10249.491887187789
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-06T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1561.4971822749635,
+          "goal": 99726.79620513532,
+          "income": 3562.6844280393516,
+          "liabilities": 9907.000470748932
+        },
+        "variances": {
+          "expenses": 40000.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-07T00:00:00+00:00",
+        "values": {
+          "assets": 49990.615545961846,
+          "expenses": 1466.4346303334567,
+          "goal": 99953.93027751434,
+          "income": null,
+          "liabilities": 9960.591256568256
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-08T00:00:00+00:00",
+        "values": {
+          "assets": 49998.01580354713,
+          "expenses": 1910.3132028272792,
+          "goal": 99963.59600368177,
+          "income": 3627.3381718226324,
+          "liabilities": 9947.302629352922
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-09T00:00:00+00:00",
+        "values": {
+          "assets": 50008.13567527509,
+          "expenses": 1918.5598375070133,
+          "goal": 99985.83344316979,
+          "income": 3629.8616882239003,
+          "liabilities": 9946.927283614403
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-10T00:00:00+00:00",
+        "values": {
+          "assets": 49959.909161874115,
+          "expenses": 1926.2676258122883,
+          "goal": 99992.28328122459,
+          "income": 3589.0949667514815,
+          "liabilities": null
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-11T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1902.6809706444778,
+          "goal": 99968.80143778925,
+          "income": 3595.152992252119,
+          "liabilities": 9968.613234629574
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-12T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 2077.5140689055665,
+          "goal": 99769.23073591669,
+          "income": 3601.6470447130746,
+          "liabilities": 9913.947343560183
+        },
+        "variances": {
+          "expenses": 40000.0,
+          "goal": 40000.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-13T00:00:00+00:00",
+        "values": {
+          "assets": 50008.24411927464,
+          "expenses": 1948.7773715262467,
+          "goal": 100098.98127695566,
+          "income": 3462.04887233966,
+          "liabilities": 9955.74696399126
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-14T00:00:00+00:00",
+        "values": {
+          "assets": 50211.90990149454,
+          "expenses": 1957.1346007036782,
+          "goal": null,
+          "income": 3628.6191586159052,
+          "liabilities": 9932.840385712732
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-15T00:00:00+00:00",
+        "values": {
+          "assets": 50018.69345888266,
+          "expenses": 1912.5148197466074,
+          "goal": 99973.03007402542,
+          "income": 3631.167298082457,
+          "liabilities": 9944.69752476382
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-16T00:00:00+00:00",
+        "values": {
+          "assets": 50012.5175646568,
+          "expenses": 2061.8830161184683,
+          "goal": 99987.4029274275,
+          "income": 3664.7604808259416,
+          "liabilities": 10056.297865944882
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 40000.0,
+          "liabilities": 40000.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-17T00:00:00+00:00",
+        "values": {
+          "assets": 50033.67437974069,
+          "expenses": 2107.923885034666,
+          "goal": 99986.100545673,
+          "income": 3641.2163112598446,
+          "liabilities": 9975.40741911355
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 40000.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-18T00:00:00+00:00",
+        "values": {
+          "assets": 49951.09074867203,
+          "expenses": 1949.681570614292,
+          "goal": 99925.99286205613,
+          "income": 4085.238782552829,
+          "liabilities": 9949.817780343372
+        },
+        "variances": {
+          "assets": 40000.0,
+          "expenses": 400.0,
+          "goal": 40000.0,
+          "income": 40000.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-19T00:00:00+00:00",
+        "values": {
+          "assets": 49981.8849241607,
+          "expenses": 1891.621480605463,
+          "goal": 99992.72052209008,
+          "income": 3596.904448717201,
+          "liabilities": 9933.665648035538
+        },
+        "variances": {
+          "assets": 400.0,
+          "expenses": 400.0,
+          "goal": 400.0,
+          "income": 400.0,
+          "liabilities": 400.0
+        }
+      },
+      {
+        "currency": "USD",
+        "timestamp": "2020-03-20T00:00:00+00:00",
+        "values": {
+          "assets": null,
+          "expenses": 1936.3207405747894,
+          "goal": 99715.11621654086,
+          "income": null,
+          "liabilities": null
+        },
+        "variances": {
+          "expenses": 400.0,
+          "goal": 40000.0
+        }
+      }
+    ],
+    "seed": 42,
+    "snapshots": [
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "mean": [
+          2983.1444783497673,
+          2001.3745453323145,
+          49964.58876845507,
+          0.0,
+          99967.82669940311
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-01T00:00:00+00:00",
+        "variance": [
+          399.8400639744215,
+          399.8400639744215,
+          399.8400639744215,
+          1000000.0,
+          399.8400639744215
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "mean": [
+          2998.8274982335884,
+          2001.3745453323145,
+          49994.63634021217,
+          0.0,
+          99967.82669940311
+        ],
+        "observed": [
+          "income",
+          "assets"
+        ],
+        "timestamp": "2020-01-02T00:00:00+00:00",
+        "variance": [
+          206.0230013209426,
+          424.8400639744215,
+          206.0230013209426,
+          1000025.0,
+          424.8400639744215
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3000.0094075285874,
+          1998.2424488527959,
+          49999.840438424,
+          9348.707718003776,
+          99967.39773717067
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-03T00:00:00+00:00",
+        "variance": [
+          146.44347406502396,
+          211.72928085817372,
+          146.44347406502396,
+          38461.61242247972,
+          444.83742161943394
+        ]
+      },
+      {
+        "changes": [
+          "liabilities"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2998.364365809864,
+          1984.3837787001235,
+          49998.85181064863,
+          9996.422311917155,
+          99968.80126111816
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-04T00:00:00+00:00",
+        "variance": [
+          120.00730210142575,
+          148.71581249671053,
+          170.7117885128615,
+          395.8854734307592,
+          464.3828110546761
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3000.9267679321297,
+          1990.0934866634846,
+          49998.85181064863,
+          9996.422311917155,
+          99968.80126111816
+        ],
+        "observed": [
+          "income",
+          "expenses"
+        ],
+        "timestamp": "2020-01-05T00:00:00+00:00",
+        "variance": [
+          106.42595175683714,
+          121.1162800207509,
+          195.7117885128615,
+          420.8854734307592,
+          489.3828110546761
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3000.9267679321297,
+          1984.4006074311244,
+          49994.11627419928,
+          10014.493702069829,
+          99958.34015391883
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-06T00:00:00+00:00",
+        "variance": [
+          131.42595175683715,
+          107.02210160458787,
+          142.23141406201162,
+          210.84909834061958,
+          225.01858295493187
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3001.2040888450756,
+          1992.8056636401268,
+          49993.10655067671,
+          10006.84540932649,
+          99961.50978209655
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-07T00:00:00+00:00",
+        "variance": [
+          155.81660772775376,
+          99.26061432892125,
+          166.53516627831723,
+          148.3679690392685,
+          153.85319097701338
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2997.8680093908406,
+          1987.3717696234005,
+          49993.10655067671,
+          10005.604672765714,
+          99973.11752351814
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-08T00:00:00+00:00",
+        "variance": [
+          124.52578340356821,
+          94.80827735875663,
+          191.53516627831723,
+          120.94709045554998,
+          123.59140021333371
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2993.8639608987974,
+          1987.8545129121642,
+          49992.103195690856,
+          10008.334414398292,
+          99973.11752351814
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-09T00:00:00+00:00",
+        "variance": [
+          108.83986733249051,
+          119.45049839768983,
+          215.3692906492677,
+          106.93130745235302,
+          148.5914002133337
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2993.8639608987974,
+          1983.7348073878106,
+          49998.544432690745,
+          10006.883772675754,
+          99983.75672812428
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-10T00:00:00+00:00",
+        "variance": [
+          133.8398673324905,
+          106.12571671643659,
+          150.14417097082108,
+          99.20928180311746,
+          121.05578999180985
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2993.8639608987974,
+          1983.7348073878106,
+          49995.04359136843,
+          10012.435648074,
+          99983.75672812428
+        ],
+        "observed": [
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-11T00:00:00+00:00",
+        "variance": [
+          158.8398673324905,
+          131.12571671643659,
+          121.80888188447395,
+          94.77839184829085,
+          146.05578999180983
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.8226999865356,
+          1983.7348073878106,
+          49991.22163431258,
+          10016.176593099312,
+          99982.29269789526
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-12T00:00:00+00:00",
+        "variance": [
+          182.99880542968558,
+          156.12571671643659,
+          107.39319476927643,
+          92.1765073167958,
+          119.81721785485313
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.8226999865356,
+          1976.9423436018394,
+          49983.00385694934,
+          10014.883150269203,
+          99982.15457700686
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-13T00:00:00+00:00",
+        "variance": [
+          207.99880542968558,
+          124.67231203592931,
+          99.47023821493566,
+          116.83425157842252,
+          144.2948085367733
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2993.675388418782,
+          1976.7480414825002,
+          49982.86549095545,
+          10015.146040929389,
+          99975.63341579825
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-14T00:00:00+00:00",
+        "variance": [
+          231.6494542765636,
+          149.11435477998765,
+          94.93025849365806,
+          141.3331047002123,
+          118.95053740040406
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2993.675388418782,
+          1990.8610594826152,
+          49988.5585805323,
+          10016.390551722767,
+          99975.88602326272
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-15T00:00:00+00:00",
+        "variance": [
+          256.6494542765636,
+          121.30987726075014,
+          92.2664196087529,
+          165.64430142690642,
+          143.43435110233258
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2993.675388418782,
+          1983.7987632716188,
+          49991.394691646194,
+          10013.888795177949,
+          99973.12653717771
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-16T00:00:00+00:00",
+        "variance": [
+          281.6494542765636,
+          107.1259249379578,
+          90.68164115308333,
+          189.73998027708942,
+          118.5251037525775
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3002.5077351382743,
+          1980.7950192113622,
+          49994.370028833066,
+          10009.844505810332,
+          99977.45281623749
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-17T00:00:00+00:00",
+        "variance": [
+          173.57939069831886,
+          99.31929172844775,
+          89.73105258850393,
+          139.72735606380897,
+          105.62537241548475
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.5869809521105,
+          1981.677129828551,
+          49994.370028833066,
+          10010.320836038687,
+          99977.45281623749
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-18T00:00:00+00:00",
+        "variance": [
+          132.7004529619042,
+          123.93410671923941,
+          114.73105258850393,
+          164.05176074368597,
+          130.62537241548475
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2988.675421507601,
+          1981.677129828551,
+          49990.20299664936,
+          9994.416101425704,
+          99981.86961976522
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-19T00:00:00+00:00",
+        "variance": [
+          113.10763842802653,
+          148.93410671923942,
+          103.55605957327508,
+          128.37701087931933,
+          112.03618851236435
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2989.6903250201685,
+          1980.9498646173327,
+          49979.733157285125,
+          9996.1054894841,
+          99982.90650303416
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-20T00:00:00+00:00",
+        "variance": [
+          137.63243615979837,
+          173.18105441921188,
+          97.28849551138522,
+          110.86619636446576,
+          102.06849478204899
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2989.037912124268,
+          1979.92428612787,
+          49979.733157285125,
+          9999.921995321003,
+          99981.56485320491
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-21T00:00:00+00:00",
+        "variance": [
+          161.9738809883137,
+          132.5224548354381,
+          122.28849551138522,
+          101.4180011997303,
+          96.43414170265956
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2989.037912124268,
+          1980.4800909489472,
+          49979.40178449378,
+          10000.245320612203,
+          99981.56485320491
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-01-22T00:00:00+00:00",
+        "variance": [
+          186.9738809883137,
+          156.90455506820794,
+          146.74813770085882,
+          126.01972216503407,
+          121.43414170265956
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2994.9411465350877,
+          1973.6921829840314,
+          49979.40178449378,
+          9999.570639414607,
+          99981.08041268536
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-23T00:00:00+00:00",
+        "variance": [
+          138.55093334766786,
+          125.04081879674305,
+          171.74813770085882,
+          150.45169284372113,
+          145.9000230862836
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2984.3713667287257,
+          1973.6921829840314,
+          49979.77715834418,
+          9999.570639414607,
+          99978.4967347852
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-24T00:00:00+00:00",
+        "variance": [
+          116.08599945075021,
+          150.04081879674305,
+          195.7851287142575,
+          175.45169284372113,
+          119.74077153642324
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2987.0839184203965,
+          1962.6385705303078,
+          49980.12822786378,
+          9999.570639414607,
+          99975.79613158405
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-25T00:00:00+00:00",
+        "variance": [
+          104.2983921919731,
+          121.75888255238027,
+          219.5731664687326,
+          200.45169284372113,
+          106.28231195413312
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2987.0839184203965,
+          1957.4585959497836,
+          49984.0435926017,
+          9984.387900003117,
+          99972.73051095173
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-26T00:00:00+00:00",
+        "variance": [
+          129.2983921919731,
+          107.36643682295957,
+          151.77371891455957,
+          144.18487977459438,
+          98.84184660412112
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2985.6917001011675,
+          1957.7375463265555,
+          49983.73805494744,
+          9988.867271547833,
+          99971.57972955379
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-27T00:00:00+00:00",
+        "variance": [
+          111.34680840895106,
+          131.92985968702644,
+          175.9959325268942,
+          118.89625728750495,
+          123.45960995218354
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2986.3087608376113,
+          1957.7375463265555,
+          49978.186667158814,
+          9992.707433318343,
+          99973.19197368163
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-28T00:00:00+00:00",
+        "variance": [
+          101.68555589128445,
+          156.92985968702644,
+          133.77523650238666,
+          105.82625297341662,
+          108.27386903850713
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2985.724494010447,
+          1948.713764925731,
+          49978.186667158814,
+          9995.677261205188,
+          99972.12749177334
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-29T00:00:00+00:00",
+        "variance": [
+          126.28559188107161,
+          125.05277511270651,
+          158.77523650238666,
+          98.5831068004606,
+          132.83129552141872
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2989.7406041053696,
+          1949.0790634732477,
+          49980.337020541185,
+          10002.466456732955,
+          99968.7294269583
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-01-30T00:00:00+00:00",
+        "variance": [
+          109.76930586185776,
+          149.49198294027428,
+          125.9219131002898,
+          94.41336452251777,
+          113.1749306921835
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2988.772707422199,
+          1948.943152619019,
+          49980.016900593415,
+          10002.466456732955,
+          99961.20470696065
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-01-31T00:00:00+00:00",
+        "variance": [
+          134.3167614442215,
+          173.73410273799672,
+          109.5777165594907,
+          119.41336452251777,
+          102.69889793228927
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2990.064094837121,
+          1932.5855061488573,
+          49981.4197538083,
+          10007.165986203696,
+          99951.98794803662
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-01T00:00:00+00:00",
+        "variance": [
+          158.6847330004148,
+          132.76952278428132,
+          100.69833619375277,
+          106.10567185408956,
+          96.79678955757434
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2992.0666830854943,
+          1923.7376001223538,
+          49981.72856157162,
+          10007.165986203696,
+          99946.59564278278
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-02-02T00:00:00+00:00",
+        "variance": [
+          125.87941579776374,
+          113.1431649378943,
+          95.64294009667556,
+          131.10567185408956,
+          93.36722033943097
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2985.2249882582955,
+          1922.0568996655486,
+          49986.84555516395,
+          10007.165986203696,
+          99960.97238857581
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-02-03T00:00:00+00:00",
+        "variance": [
+          109.55531208532494,
+          137.6677185790371,
+          92.68766043328965,
+          156.10567185408956,
+          91.33850729366968
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2985.2249882582955,
+          1922.0568996655486,
+          49975.15633755638,
+          10007.236614743722,
+          99958.4574472439
+        ],
+        "observed": [
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-04T00:00:00+00:00",
+        "variance": [
+          134.55531208532494,
+          162.6677185790371,
+          90.93333253088434,
+          180.2893860941709,
+          90.12576490058424
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2985.2249882582955,
+          1906.4835781504416,
+          49968.61965584882,
+          10002.774604924072,
+          99956.59000959084
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-05T00:00:00+00:00",
+        "variance": [
+          159.55531208532494,
+          127.73729959699813,
+          89.8824132662097,
+          135.6636285455909,
+          89.39623893423598
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2981.005761661242,
+          1906.4835781504416,
+          49969.1581919838,
+          9993.751737672359,
+          99959.52508576286
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-06T00:00:00+00:00",
+        "variance": [
+          126.2876639864569,
+          152.73729959699813,
+          89.24943661403485,
+          114.62389951163127,
+          88.95573511287759
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2981.005761661242,
+          1900.9254985375144,
+          49969.1581919838,
+          9993.751737672359,
+          99959.47346015956
+        ],
+        "observed": [
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-02-07T00:00:00+00:00",
+        "variance": [
+          151.2876639864569,
+          123.05752093276938,
+          114.24943661403485,
+          139.62389951163127,
+          113.63200963312518
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2979.0400218367313,
+          1900.9254985375144,
+          49969.1581919838,
+          9990.707117757373,
+          99959.47346015956
+        ],
+        "observed": [
+          "income",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-08T00:00:00+00:00",
+        "variance": [
+          122.36087981963101,
+          148.05752093276936,
+          139.24943661403483,
+          116.62552694210919,
+          138.63200963312516
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          2979.6903568695857,
+          1901.5855652475211,
+          49969.1581919838,
+          9979.597764004582,
+          99957.64015752035
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-09T00:00:00+00:00",
+        "variance": [
+          146.81999174068056,
+          172.31202364181036,
+          164.24943661403483,
+          104.59294837279455,
+          162.96535093626844
+        ]
+      },
+      {
+        "changes": [
+          "income"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3174.612620882148,
+          1894.544781090664,
+          49969.1581919838,
+          9981.756521187157,
+          99962.30403295772
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-10T00:00:00+00:00",
+        "variance": [
+          120.19166466540797,
+          132.13330107691405,
+          189.24943661403483,
+          97.88117366062104,
+          127.87512096551598
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3174.612620882148,
+          1897.5437005214383,
+          49969.1581919838,
+          9981.756521187157,
+          99963.51318529714
+        ],
+        "observed": [
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-02-11T00:00:00+00:00",
+        "variance": [
+          145.19166466540798,
+          112.81558705838069,
+          214.24943661403483,
+          122.88117366062104,
+          110.6037259904492
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3174.612620882148,
+          1893.538928296263,
+          49971.03828286787,
+          9981.756521187157,
+          99963.77369448492
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-02-12T00:00:00+00:00",
+        "variance": [
+          170.19166466540798,
+          102.5002550128177,
+          149.7064669349023,
+          147.88117366062104,
+          135.14556991964406
+        ]
+      },
+      {
+        "changes": [
+          "income"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3313.4059339202286,
+          1895.6484593304876,
+          49966.885594124054,
+          9980.882409734195,
+          99961.95575813344
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-13T00:00:00+00:00",
+        "variance": [
+          131.1790310606158,
+          96.68261108970997,
+          121.59700785457946,
+          120.70997031090226,
+          114.35996535159089
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3314.3915482851726,
+          1895.6484593304876,
+          49966.885594124054,
+          9985.801844686042,
+          99949.92758278178
+        ],
+        "observed": [
+          "income",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-14T00:00:00+00:00",
+        "variance": [
+          155.57160549544523,
+          121.68261108970997,
+          146.59700785457946,
+          106.80396418477623,
+          103.35210197571615
+        ]
+      },
+      {
+        "changes": [
+          "income"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3403.1090007565795,
+          1895.6484593304876,
+          49984.2910379125,
+          9986.87937087827,
+          99949.92758278178
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-15T00:00:00+00:00",
+        "variance": [
+          124.40953280265919,
+          146.68261108970995,
+          120.08250952792643,
+          99.13725587722826,
+          128.35210197571615
+        ]
+      },
+      {
+        "changes": [
+          "income"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3454.060633878915,
+          1898.9516135635436,
+          49984.2910379125,
+          9986.87937087827,
+          99959.99632871864
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-02-16T00:00:00+00:00",
+        "variance": [
+          108.7782602100027,
+          120.12442411880116,
+          145.08250952792645,
+          124.13725587722826,
+          110.85318113236045
+        ]
+      },
+      {
+        "changes": [
+          "income"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3490.89513371131,
+          1898.2352783260098,
+          49969.02246418333,
+          9976.476649418444,
+          99959.99632871864
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-17T00:00:00+00:00",
+        "variance": [
+          100.25006275629941,
+          106.48902723696241,
+          119.33887231079463,
+          108.63386468942926,
+          135.85318113236045
+        ]
+      },
+      {
+        "changes": [
+          "income"
+        ],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3514.841418222012,
+          1905.2919182542867,
+          49969.02246418333,
+          9971.094586821493,
+          99959.99632871864
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-18T00:00:00+00:00",
+        "variance": [
+          95.38318727581895,
+          98.95897788936931,
+          144.3388723107946,
+          100.16895368302994,
+          160.85318113236045
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3515.3890345192767,
+          1915.6005598783076,
+          49969.02246418333,
+          9958.723732834209,
+          99956.75215138472
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-19T00:00:00+00:00",
+        "variance": [
+          120.02197158874444,
+          94.63258241223798,
+          169.3388723107946,
+          95.33614110675452,
+          126.89403223731651
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3528.3534057306797,
+          1916.7136320307202,
+          49972.82336395138,
+          9958.723732834209,
+          99956.75215138472
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets"
+        ],
+        "timestamp": "2020-02-20T00:00:00+00:00",
+        "variance": [
+          106.4338534213613,
+          92.09013172875318,
+          130.7933109306503,
+          120.33614110675452,
+          151.8940322373165
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3540.4382821005843,
+          1924.4008418317112,
+          49972.82336395138,
+          9956.065350895433,
+          99975.0417258163
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-21T00:00:00+00:00",
+        "variance": [
+          98.9277236105247,
+          90.57618743354742,
+          155.7933109306503,
+          106.6029776143545,
+          122.6527038605577
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3555.422195098232,
+          1924.4008418317112,
+          49971.93062505471,
+          9951.655705253928,
+          99975.0417258163
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-22T00:00:00+00:00",
+        "variance": [
+          94.61436608584553,
+          115.57618743354742,
+          179.97983218660633,
+          99.02350675682213,
+          147.6527038605577
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3562.764302626143,
+          1924.4008418317112,
+          49976.25175564956,
+          9960.941295852552,
+          99975.0417258163
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-23T00:00:00+00:00",
+        "variance": [
+          92.07933721069138,
+          140.57618743354743,
+          135.5283738604894,
+          94.67018571315838,
+          172.6527038605577
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3570.8438964013203,
+          1930.4104063105076,
+          49976.51653221263,
+          9960.210989517826,
+          99983.80040281736
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-24T00:00:00+00:00",
+        "variance": [
+          90.5697279200973,
+          117.10265821826302,
+          159.8867150014624,
+          119.31322980394151,
+          132.2859932424389
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3570.9585826836123,
+          1930.4104063105076,
+          49971.7401149657,
+          9965.158741657726,
+          99987.43922410486
+        ],
+        "observed": [
+          "income",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-25T00:00:00+00:00",
+        "variance": [
+          115.23678083491033,
+          142.102658218263,
+          126.4427522522888,
+          106.05160551098294,
+          112.89427342489408
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3576.8622654249302,
+          1930.2535255357259,
+          49964.34494422586,
+          9964.89072561238,
+          99986.53617628152
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-26T00:00:00+00:00",
+        "variance": [
+          103.83356765763415,
+          117.86413327228634,
+          109.85202118170389,
+          98.7110135067825,
+          137.4205358014441
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3576.25926822244,
+          1929.8380611949285,
+          49974.608658069454,
+          9964.792289777304,
+          99986.35168622549
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-27T00:00:00+00:00",
+        "variance": [
+          128.41994765725687,
+          105.26695319591465,
+          100.85183627707819,
+          123.32958281464829,
+          161.7636921625874
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3575.2734143752173,
+          1919.450771341598,
+          49976.19847161864,
+          9957.63594895479,
+          99986.35168622549
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-02-28T00:00:00+00:00",
+        "variance": [
+          152.83375399380708,
+          98.265186929562,
+          95.73178419844119,
+          108.20469109345,
+          186.7636921625874
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3574.5534611361895,
+          1922.521204536322,
+          49976.19847161864,
+          9956.69325016615,
+          99978.01066846677
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-02-29T00:00:00+00:00",
+        "variance": [
+          123.1037493152143,
+          94.22769945989549,
+          120.73178419844119,
+          132.76257614484635,
+          138.46110508062472
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3580.5328575948865,
+          1922.521204536322,
+          49976.077098711234,
+          9956.69325016615,
+          99978.01066846677
+        ],
+        "observed": [
+          "income",
+          "assets"
+        ],
+        "timestamp": "2020-03-01T00:00:00+00:00",
+        "variance": [
+          108.08446357117684,
+          119.22769945989549,
+          145.20276773811548,
+          157.76257614484635,
+          163.46110508062472
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3593.986718888633,
+          1912.6136200488397,
+          49965.03216638373,
+          9956.69325016615,
+          99969.37154715158
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-03-02T00:00:00+00:00",
+        "variance": [
+          99.85994540499871,
+          106.00540884121149,
+          119.39806494680975,
+          182.76257614484635,
+          128.10437492197806
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3588.700787927205,
+          1912.2740725356052,
+          49967.46551643734,
+          9956.69325016615,
+          99967.30387530591
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-03-03T00:00:00+00:00",
+        "variance": [
+          95.15677200983801,
+          98.68480181932497,
+          106.09741234911857,
+          207.76257614484635,
+          110.72367666126327
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3588.700787927205,
+          1912.2740725356052,
+          49971.66822441321,
+          9958.244667789819,
+          99962.8168823134
+        ],
+        "observed": [
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-04T00:00:00+00:00",
+        "variance": [
+          120.15677200983801,
+          123.68480181932497,
+          98.7369995039187,
+          147.14054523449846,
+          101.33856879884065
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3584.3331007952434,
+          1910.986127364545,
+          49971.66822441321,
+          9959.492683316617,
+          99959.24958902804
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-05T00:00:00+00:00",
+        "variance": [
+          106.5064432564499,
+          108.39359962318403,
+          123.7369995039187,
+          171.4029104729088,
+          96.01315676877597
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3578.9767406015503,
+          1909.8245114573756,
+          49971.66822441321,
+          9942.206343588192,
+          99958.54846222258
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-06T00:00:00+00:00",
+        "variance": [
+          98.96884218428828,
+          132.95023187317653,
+          148.7369995039187,
+          131.72498458612418,
+          120.64815641213184
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3578.9767406015503,
+          1908.0805595342977,
+          49977.405784998184,
+          9947.381924500121,
+          99957.31574461724
+        ],
+        "observed": [
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-07T00:00:00+00:00",
+        "variance": [
+          123.96884218428828,
+          157.32897815866326,
+          121.12657866174939,
+          112.60495858840274,
+          106.7707493926711
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3592.1001564710455,
+          1908.7796069550345,
+          49982.92038841502,
+          9947.361628174218,
+          99958.87196869361
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-08T00:00:00+00:00",
+        "variance": [
+          108.54447883894991,
+          125.24121930884594,
+          107.0276264669805,
+          102.38369746418567,
+          99.11846376895674
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3601.5517472532597,
+          1911.4500607699933,
+          49989.177797446435,
+          9947.256717051123,
+          99958.95537032139
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-09T00:00:00+00:00",
+        "variance": [
+          100.1187223449914,
+          109.21844023067764,
+          99.26373736922822,
+          96.61557463887,
+          123.73452030457193
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3598.583701372217,
+          1915.1728646236654,
+          49982.24039212032,
+          9947.256717051123,
+          99967.98890230729
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "goal"
+        ],
+        "timestamp": "2020-03-10T00:00:00+00:00",
+        "variance": [
+          95.30699784327336,
+          100.49704774153552,
+          94.8100953865606,
+          121.61557463887,
+          108.42002083048662
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3597.7904421686635,
+          1912.189601783606,
+          49982.24039212032,
+          9952.985053824399,
+          99968.19213521325
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-11T00:00:00+00:00",
+        "variance": [
+          92.48924065365901,
+          95.52635797357395,
+          119.8100953865606,
+          107.28971616715006,
+          100.04875379275322
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3598.6660339082587,
+          1912.6862541886203,
+          49982.24039212032,
+          9943.283029806624,
+          99967.57207677574
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-12T00:00:00+00:00",
+        "variance": [
+          90.81482776743661,
+          120.16428388619131,
+          144.8100953865606,
+          99.41181439290354,
+          124.65904234539597
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3598.271618560968,
+          1922.2964604288786,
+          49989.98980797699,
+          9946.239982003019,
+          99968.06190845859
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-13T00:00:00+00:00",
+        "variance": [
+          115.48046900173813,
+          106.51048733522377,
+          119.20469416840429,
+          94.89627119627845,
+          149.10118383576034
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3606.15948297879,
+          1930.9163859328173,
+          49990.78698205129,
+          9943.14982398545,
+          99968.06190845859
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities"
+        ],
+        "timestamp": "2020-03-14T00:00:00+00:00",
+        "variance": [
+          103.96710116922753,
+          98.97113262585925,
+          143.68668680025172,
+          92.24630207129418,
+          174.10118383576034
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3612.2566209924153,
+          1926.5625907327617,
+          49999.064740659356,
+          9943.500647552964,
+          99969.71299457316
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-15T00:00:00+00:00",
+        "variance": [
+          97.52372189813619,
+          94.63966612403483,
+          118.64999882404636,
+          90.6696106684847,
+          132.93326016217162
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3612.416954085254,
+          1926.9661260248938,
+          49999.1128802319,
+          9943.82588730248,
+          99974.72045508362
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-16T00:00:00+00:00",
+        "variance": [
+          122.1495664105147,
+          119.2828919897358,
+          143.13596180542066,
+          115.336088656711,
+          113.2273491752515
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3620.1622090965006,
+          1927.6165077708615,
+          50009.34112021671,
+          9952.028242727547,
+          99977.64308574882
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-17T00:00:00+00:00",
+        "variance": [
+          107.57538738510962,
+          143.76432368009796,
+          118.37727101176186,
+          103.88799978590365,
+          102.72785237469861
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3621.6985597117937,
+          1934.1636754687863,
+          50009.13307147056,
+          9951.48956142751,
+          99977.47868142044
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-18T00:00:00+00:00",
+        "variance": [
+          132.13743310057507,
+          118.68840337110849,
+          142.865180519126,
+          97.47848303465241,
+          127.32129049977084
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3614.705522220095,
+          1922.9204339026405,
+          50001.07831600413,
+          9947.31131113611,
+          99981.6821348819
+        ],
+        "observed": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "timestamp": "2020-03-19T00:00:00+00:00",
+        "variance": [
+          112.81771696873827,
+          105.71378935447355,
+          118.24298180470828,
+          93.7672933999307,
+          110.31353896348419
+        ]
+      },
+      {
+        "changes": [],
+        "currency": "USD",
+        "initialized": [
+          "income",
+          "expenses",
+          "assets",
+          "liabilities",
+          "goal"
+        ],
+        "mean": [
+          3614.705522220095,
+          1926.2209037580765,
+          50001.07831600413,
+          9947.31131113611,
+          99980.7834256257
+        ],
+        "observed": [
+          "expenses",
+          "goal"
+        ],
+        "timestamp": "2020-03-20T00:00:00+00:00",
+        "variance": [
+          137.81771696873827,
+          98.51923351263623,
+          143.24298180470828,
+          118.7672933999307,
+          134.85733837073067
+        ]
+      }
+    ],
+    "steps": 80,
+    "truth": [
+      [
+        3001.523585398772,
+        1994.8000794687975,
+        50003.75225597903,
+        10004.702823581956,
+        99990.24482405673
+      ],
+      [
+        3001.2739558438407,
+        1993.8757676510713,
+        50000.34760825701,
+        10010.815530275326,
+        99989.47217664639
+      ],
+      [
+        3000.7042185555665,
+        1989.6749852662588,
+        49996.22520217855,
+        10014.068494214449,
+        99993.18844750241
+      ],
+      [
+        2998.3523552841025,
+        1986.4805960250421,
+        49994.84949092242,
+        10021.54320077062,
+        99988.85929192395
+      ],
+      [
+        2999.064483964455,
+        1989.933022795381,
+        49992.713227690736,
+        10022.335899226004,
+        99991.98724389379
+      ],
+      [
+        2998.572056541908,
+        1987.8165312351603,
+        49992.314636636205,
+        10013.899227056214,
+        99984.75168153168
+      ],
+      [
+        3000.744174759637,
+        1989.0052092468216,
+        49989.34388685772,
+        10006.668937784272,
+        99985.11232907025
+      ],
+      [
+        2998.7951257438585,
+        1982.12177850904,
+        49992.519641591796,
+        10005.557824298778,
+        99977.75829759774
+      ],
+      [
+        2999.580368581085,
+        1981.3286043238465,
+        49987.341372827665,
+        9997.184409575257,
+        99975.32675805238
+      ],
+      [
+        3001.5051234116145,
+        1980.5454148355561,
+        49987.137560196985,
+        9993.91047109811,
+        99977.5571190598
+      ],
+      [
+        3002.421295597724,
+        1974.4230696769537,
+        49980.29676420076,
+        10002.165110759266,
+        99986.17544766371
+      ],
+      [
+        3002.874220132233,
+        1977.642763643338,
+        49970.0459036956,
+        10001.921518749616,
+        99981.95929631226
+      ],
+      [
+        2999.3945070738796,
+        1976.5234695589354,
+        49971.25838765196,
+        10002.804385541884,
+        99976.53735595109
+      ],
+      [
+        2994.0824350145817,
+        1973.876272422105,
+        49966.87408376112,
+        10002.333072770622,
+        99967.74871399431
+      ],
+      [
+        2993.4133201920017,
+        1967.001793380255,
+        49965.683215041245,
+        10001.001135320577,
+        99968.90956344244
+      ],
+      [
+        2989.598034143528,
+        1961.439736020338,
+        49971.638929806686,
+        10002.314881446313,
+        99971.31028045941
+      ],
+      [
+        2990.48059625039,
+        1962.9197059687735,
+        49969.77935690008,
+        9993.53127253392,
+        99972.95025787798
+      ],
+      [
+        2988.9977414827167,
+        1963.2524350480696,
+        49966.29223778358,
+        9998.479192206894,
+        99967.0587397624
+      ],
+      [
+        2985.503089339823,
+        1958.1838482158676,
+        49966.45614824796,
+        9992.396391459988,
+        99963.70303837542
+      ],
+      [
+        2987.3448724033265,
+        1962.4167681450847,
+        49963.601429940354,
+        9996.465209909818,
+        99969.04539615536
+      ],
+      [
+        2987.40200268113,
+        1969.0615710972697,
+        49967.885399853185,
+        10000.674310244269,
+        99971.81597866198
+      ],
+      [
+        2980.338173261668,
+        1957.5110539141065,
+        49968.15716778014,
+        9998.315430076078,
+        99974.11290752057
+      ],
+      [
+        2979.008979302091,
+        1956.923343077466,
+        49972.30476299026,
+        9988.350128220807,
+        99967.6305458802
+      ],
+      [
+        2971.606296739266,
+        1952.4826738087977,
+        49970.51467954989,
+        9992.3680533177,
+        99976.23439503602
+      ],
+      [
+        2973.249606750678,
+        1954.2922830784419,
+        49977.11798782753,
+        9990.654122563377,
+        99968.85010595179
+      ],
+      [
+        2974.8191478079657,
+        1950.125439048695,
+        49969.17015036099,
+        9980.28920538342,
+        99963.26318538684
+      ],
+      [
+        2987.8075164409447,
+        1951.2408377618212,
+        49976.33622289402,
+        9980.746806274286,
+        99966.16707086349
+      ],
+      [
+        2986.1294796003513,
+        1941.2867777862014,
+        49968.86091874288,
+        9987.566117423356,
+        99970.64299577335
+      ],
+      [
+        2989.4711096908914,
+        1937.8449163750477,
+        49973.349995784934,
+        9995.710802161475,
+        99965.79224817509
+      ],
+      [
+        2992.658464204147,
+        1935.151059786959,
+        49979.089059088605,
+        9983.739500636973,
+        99961.85941929957
+      ],
+      [
+        2991.1230481124744,
+        1931.383421885172,
+        49973.92774573572,
+        9977.517141698969,
+        99957.41543273341
+      ],
+      [
+        2992.0722650766616,
+        1924.1093094588832,
+        49980.60867623578,
+        9983.756891624265,
+        99956.1528460619
+      ],
+      [
+        2985.6669190424323,
+        1921.9912764265791,
+        49978.00573417151,
+        9987.819898063033,
+        99957.361144661
+      ],
+      [
+        2987.898529780148,
+        1917.9582819050422,
+        49971.5925609202,
+        9991.388998745446,
+        99958.56936726939
+      ],
+      [
+        2985.872183452901,
+        1908.2740917019412,
+        49970.04014103922,
+        9989.957883996243,
+        99957.61974806427
+      ],
+      [
+        2995.111308517681,
+        1907.4032280329163,
+        49978.37957909482,
+        9984.439180507334,
+        99960.5560438983
+      ],
+      [
+        2982.2875868085785,
+        1911.327448215957,
+        49979.741427871195,
+        9980.86980638715,
+        99953.97189284301
+      ],
+      [
+        2989.779459010062,
+        1909.0332457502104,
+        49977.61755923223,
+        9982.4401925065,
+        99952.74308534294
+      ],
+      [
+        2995.0253271172687,
+        1904.1534516696358,
+        49973.06468481263,
+        9985.23293730287,
+        99951.63540476428
+      ],
+      [
+        3000.6654214040154,
+        1892.7497624427763,
+        49965.58149136311,
+        9980.618505093393,
+        99958.94129909789
+      ],
+      [
+        3605.674148392273,
+        1898.688387909086,
+        49960.47837626554,
+        9971.319328060665,
+        99959.43647320292
+      ],
+      [
+        3607.886876513293,
+        1904.936714244305,
+        49963.65523197985,
+        9975.019399242186,
+        99962.62100461978
+      ],
+      [
+        3602.419519660983,
+        1906.9216707667993,
+        49963.95716162197,
+        9968.506138658015,
+        99962.3650190607
+      ],
+      [
+        3593.4859821041427,
+        1906.3082475793235,
+        49968.93566855147,
+        9973.802257352496,
+        99967.49420327513
+      ],
+      [
+        3590.345651685516,
+        1907.8655117508406,
+        49966.92570565083,
+        9975.022779297387,
+        99968.86022338939
+      ],
+      [
+        3592.32532105767,
+        1915.6727027598586,
+        49961.28680182637,
+        9973.123746738438,
+        99965.09576380324
+      ],
+      [
+        3588.7889984079125,
+        1920.517692111238,
+        49959.47763914095,
+        9970.674995823932,
+        99969.6387706027
+      ],
+      [
+        3582.078122576058,
+        1918.482973367375,
+        49956.55326846628,
+        9970.442059472236,
+        99971.03309202594
+      ],
+      [
+        3583.5227059119015,
+        1924.7077102606072,
+        49954.39657127509,
+        9957.933560251438,
+        99962.5131277129
+      ],
+      [
+        3591.464086447648,
+        1921.5966730341336,
+        49964.69806212771,
+        9956.806403005297,
+        99956.12804548805
+      ],
+      [
+        3587.1290601660307,
+        1922.1928023397704,
+        49961.84081603173,
+        9955.975613795548,
+        99965.53891988906
+      ],
+      [
+        3591.4589033581165,
+        1923.2508510037458,
+        49966.27278582957,
+        9958.429447340517,
+        99971.54045118036
+      ],
+      [
+        3591.449304092235,
+        1925.291031888152,
+        49974.357157822065,
+        9959.084582921485,
+        99966.5287312769
+      ],
+      [
+        3596.9727001692477,
+        1923.2293475271283,
+        49967.27294735908,
+        9961.303646468401,
+        99968.84558030707
+      ],
+      [
+        3605.9445504422497,
+        1929.8033868846578,
+        49966.72427645093,
+        9963.067247283532,
+        99972.67969466599
+      ],
+      [
+        3603.4408267234653,
+        1921.527910168732,
+        49961.499057903,
+        9957.96202148014,
+        99972.94056125928
+      ],
+      [
+        3604.454701964727,
+        1919.0261047817476,
+        49963.92486346573,
+        9955.322433293519,
+        99972.93359800207
+      ],
+      [
+        3603.434359042533,
+        1919.5743435546176,
+        49976.150514191024,
+        9948.435855015918,
+        99980.29367083452
+      ],
+      [
+        3597.861274227193,
+        1918.427880286856,
+        49968.186542892414,
+        9943.871465082324,
+        99981.42760106506
+      ],
+      [
+        3594.880829728912,
+        1918.4704084204718,
+        49972.16120415699,
+        9944.773284797457,
+        99978.14732638186
+      ],
+      [
+        3601.3986550679524,
+        1922.6715092339427,
+        49979.59819560542,
+        9943.41491287902,
+        99972.38608217548
+      ],
+      [
+        3600.0478794212668,
+        1931.5282154452811,
+        49979.10596559388,
+        9942.195432328133,
+        99961.89882738743
+      ],
+      [
+        3600.1205188309546,
+        1934.9787375691012,
+        49981.471401584015,
+        9940.27420276373,
+        99966.99404585363
+      ],
+      [
+        3592.583890592089,
+        1930.052947407547,
+        49977.167193191395,
+        9952.56132322411,
+        99976.00275559236
+      ],
+      [
+        3596.857319242767,
+        1926.0518889245377,
+        49980.331482764435,
+        9952.508129841019,
+        99969.12081809697
+      ],
+      [
+        3590.244613576309,
+        1923.6209182710425,
+        49982.43261631181,
+        9951.996146307963,
+        99965.86799999494
+      ],
+      [
+        3596.8693919732173,
+        1923.3987374325206,
+        49988.88543512342,
+        9954.051059192469,
+        99969.78079412351
+      ],
+      [
+        3597.0023186798476,
+        1926.251422613213,
+        49991.97638869675,
+        9961.810459793081,
+        99976.1656982845
+      ],
+      [
+        3600.8747921991744,
+        1926.058731303996,
+        50000.6746289064,
+        9959.399297399566,
+        99981.16237994688
+      ],
+      [
+        3597.8760449535803,
+        1934.1590828496762,
+        50002.49311965812,
+        9958.309151759044,
+        99987.13047280617
+      ],
+      [
+        3602.1034604959896,
+        1926.280986213823,
+        49999.18603519658,
+        9952.521828597877,
+        99982.30371683212
+      ],
+      [
+        3604.1232305996677,
+        1929.1082883096685,
+        50008.36716439523,
+        9951.507118879501,
+        99984.18393868023
+      ],
+      [
+        3608.5059486200753,
+        1930.4587654806548,
+        50010.42702230587,
+        9960.804592917617,
+        99986.52670257277
+      ],
+      [
+        3602.0465372789167,
+        1932.2219015002406,
+        50019.991796344526,
+        9963.135481228603,
+        99984.64564205385
+      ],
+      [
+        3606.192142634247,
+        1934.2461769384192,
+        50011.96544010886,
+        9963.01399430975,
+        99986.46831449901
+      ],
+      [
+        3613.579110805097,
+        1931.5333878378601,
+        50014.27650255392,
+        9953.657903729445,
+        99995.77990230599
+      ],
+      [
+        3624.727770012145,
+        1923.6937357557076,
+        50020.58118917173,
+        9960.49744098305,
+        99991.51910827616
+      ],
+      [
+        3620.082824176492,
+        1919.3527686025038,
+        50012.40387292944,
+        9961.68218404078,
+        99991.10186436003
+      ],
+      [
+        3622.632315418875,
+        1918.8266479312495,
+        50010.427652204424,
+        9969.018090294325,
+        99990.53081490114
+      ],
+      [
+        3628.257535027415,
+        1918.7595689966254,
+        49999.125578417734,
+        9968.064287992653,
+        99989.71681991797
+      ]
+    ]
+  },
+  "seed": 42,
+  "size": 80,
+  "source_sha256": {
+    "__init__.py": "e7faa7e57f7b2a47f3f64d0878c8c852f5c35d5f20f15bc44d64c838f3f448ad",
+    "dpro.py": "f11a44541cec274d1f8349fa7b539eaa7a12d64486b29d0afbdbfe527b5afd44",
+    "eccr.py": "0ef6a0f3f295f93febbd028759fc5e8f707e7223b8dc18faa17435531e8781da",
+    "run.py": "80065f1f09b550f3bb53530beb72cbbf53f282fcf9287391738ce0dc7ed5c64a",
+    "tfsf.py": "bbe91256c29c7848dd6c00b37f5441040bb576a653b45847f12a4cdef36df406"
+  }
+}

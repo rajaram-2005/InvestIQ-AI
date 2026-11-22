@@ -1,0 +1,2 @@
+entity_id,period_start,period_end,published_at,available_at,currency,unit,version_identifier,open,high,low,close,volume
+SYNTH,2024-01-02,2024-01-02,2024-01-02T21:00:00Z,2024-01-02T21:05:00Z,USD,USD/share,quote-v1,100.00,105.00,99.00,103.00,1200

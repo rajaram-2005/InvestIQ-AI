@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Exploratory final synthetic metrics (synthetic-heuristic-not-an-llm); lower is better for losses and drawdown; higher is better for evidence coverage.}
+\label{tab:investiq-results}
+\begin{tabular}{lrrrrrrrrrrrrr}
+\toprule
+ & n & mae & rmse & brier & log_loss & expected_calibration_error & maximum_drawdown & evidence_coverage & unsupported_claim_rate & scenario_error & scenario_scored_n & risk_constraint_violations & cost_per_research_report_usd \\
+System &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+E0 & 45 & 0.0175 & 0.0294 & 0.2473 & 0.6877 & 0.0198 & 0.0692 & 1.0000 & 0.0000 & 0.0030 & 45 & 0 & 0.0000 \\
+E1 & 45 & 0.0167 & 0.0276 & 0.2452 & 0.6836 & 0.1341 & 0.0122 & 0.8889 & 0.1111 & 0.0010 & 45 & 0 & 0.0000 \\
+E2 & 45 & 0.0167 & 0.0276 & 0.2417 & 0.6765 & 0.1088 & 0.0091 & 1.0000 & 0.0519 & 0.0010 & 45 & 0 & 0.0000 \\
+E3 & 45 & 0.0167 & 0.0276 & 0.2417 & 0.6765 & 0.1088 & 0.0091 & 1.0000 & 0.0519 & 0.0010 & 45 & 0 & 0.0000 \\
+E4 & 45 & 0.0171 & 0.0289 & 0.2450 & 0.6831 & 0.0481 & 0.0601 & 1.0000 & 0.0519 & 0.0000 & 45 & 0 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

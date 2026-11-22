@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+results/
+.venv/
+.pytest_cache/
+
+node_modules/
+.next/
+*.tsbuildinfo
+web/.env*
+.env
