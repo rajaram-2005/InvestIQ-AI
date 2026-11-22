@@ -1,0 +1,22 @@
+{
+  "source": {
+    "id": "f43e1206-7a38-4a7c-a391-f02f0d5ecb6b",
+    "provider": "Synthetic fixture (not a market feed)",
+    "source_uri": "synthetic://fixture/provider",
+    "license": "synthetic test fixture",
+    "license_reference": "repository LICENSE",
+    "allow_raw_storage": true,
+    "allow_derived_storage": true,
+    "allow_redistribution": false,
+    "version_identifier": "fixture-source-v1"
+  },
+  "document": {
+    "id": "414efbb6-7784-4ba7-8ce0-5fd676669eb0",
+    "document_type": "market_prices",
+    "original_source_uri": "synthetic://fixture/market.csv",
+    "media_type": "text/csv",
+    "published_at": "2024-01-02T21:00:00Z",
+    "available_at": "2024-01-02T21:05:00Z",
+    "version_identifier": "fixture-file-v1"
+  }
+}
